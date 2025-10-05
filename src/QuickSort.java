@@ -28,11 +28,11 @@ public class QuickSort {
      * First, it checks if the lowIndex is less than the highIndex check for base case
      * If it is not a base case, it calls the partition method to partition the array
      * The pivotIndex returned from the partition method is then used to separate the array into two sub-arrays
-     * The method then recursively calls itself on the left and right sub-arrays until the base case is reached
+     * The method then recursively calls itself on the left and right sub-arrays until the base case is reached.
      *
-     * @param inputArray the array being sorted
-     * @param lowIndex starting index of the subarray
-     * @param highIndex ending index of the subarray
+     * @param inputArray The array being sorted.
+     * @param lowIndex Starting index of the subarray.
+     * @param highIndex Ending index of the subarray.
      */
     private void quicksortFirstPivot(int[] inputArray, int lowIndex, int highIndex) {
         // Initial check to see if lowIndex is less than highIndex
@@ -52,12 +52,12 @@ public class QuickSort {
      * The pivot is chosen as the first element in the subarray at lowIndex.
      * Compares each element in the subarray to the pivot value and swaps elements 
      * when pivot value is greater than current element value
-     * Swaps the pivot value with the element at the partition index
+     * Swaps the pivot value with the element at the partition index.
      *
-     * @param inputArray the array containing the subarray to partition
-     * @param lowIndex the starting index of the subarray (pivot location)
-     * @param highIndex the ending index of the subarray
-     * @return the final index of the pivot after partitioning
+     * @param inputArray The array containing the subarray to partition.
+     * @param lowIndex The starting index of the subarray as pivot location.
+     * @param highIndex The ending index of the subarray.
+     * @return The final index of the pivot after partitioning.
      */
     private int partitionArray(int[] inputArray, int lowIndex, int highIndex) {
         // assign the pivot value to the first value in array at lowIndex
@@ -82,9 +82,9 @@ public class QuickSort {
 
 
     /**
-     * Sorts array using QuickSort with a pivot chosen as the median of three
+     * Sorts array using QuickSort with a pivot chosen as the median of three.
      *
-     * @param inputArray The input array that needs to be sorted
+     * @param inputArray The input array that needs to be sorted.
      */
     public void quickSortMedian(int[] inputArray) {
         // check if array is null or empty
@@ -102,11 +102,11 @@ public class QuickSort {
      * First, it checks if the lowIndex is less than the highIndex check for base case
      * If it is not a base case, it calls the partition method to partition the array
      * The pivotIndex returned from the partition method is then used to separate the array into two sub-arrays
-     * The method then recursively calls itself on the left and right sub-arrays until the base case is reached
-     * 
-     * @param inputArray the array being sorted
-     * @param lowIndex starting index of the subarray
-     * @param highIndex ending index of the subarray
+     * The method then recursively calls itself on the left and right sub-arrays until the base case is reached.
+     *
+     * @param inputArray The array being sorted.
+     * @param lowIndex The starting index of the subarray.
+     * @param highIndex The ending index of the subarray.
      */
     private void quicksortMedianPivot(int[] inputArray, int lowIndex, int highIndex) {
         if (lowIndex < highIndex) {
@@ -123,12 +123,12 @@ public class QuickSort {
     /**
      * Partitions the subarray using a median-of-three as a pivot.
      * First uses the findAndPlaceMedianPivot method to find the median pivot
-     * Then using the same partition logic to break the array into two sub-arrays
+     * Then using the same partition logic to break the array into two sub-arrays.
      *
-     * @param inputArray the array containing the subarray to partition
-     * @param lowIndex starting index of the subarray
-     * @param highIndex ending index of the subarray
-     * @return index of the pivot after partitioning
+     * @param inputArray The array containing the subarray to partition.
+     * @param lowIndex The starting index of the subarray.
+     * @param highIndex The ending index of the subarray.
+     * @return The index of the pivot after partitioning.
      */
     private int partitionMedianPivot(int[] inputArray, int lowIndex, int highIndex) {
         // Find the median of three random indexes and place it at the lowIndex
@@ -143,9 +143,9 @@ public class QuickSort {
      * Finds the median of three random elements in the subarray
      * Swaps that median value into position first position so it becomes the pivot.
      *
-     * @param inputArray the array containing the values
-     * @param lowIndex starting index of the subarray
-     * @param highIndex ending index of the subarray
+     * @param inputArray The array containing the values.
+     * @param lowIndex The starting index of the subarray.
+     * @param highIndex The ending index of the subarray.
      */
     private void findAndPlaceMedianPivot(int[] inputArray, int lowIndex, int highIndex) {
         // Check if at least 3 elements in array
@@ -178,9 +178,9 @@ public class QuickSort {
     /**
      * Swaps two elements locations in an array.
      *
-     * @param inputArray the array containing the elements to swap
-     * @param positionOne index of the first element
-     * @param positionTwo index of the second element
+     * @param inputArray The array containing the elements to swap.
+     * @param positionOne Index of the first element.
+     * @param positionTwo Index of the second element.
      */
     private void swap(int[] inputArray, int positionOne, int positionTwo) {
         int temp = inputArray[positionOne];

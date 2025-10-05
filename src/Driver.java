@@ -94,9 +94,9 @@ public class Driver {
     }
 
     /**
-     * Runs both quick sort methods first and median pivot on the input array
+     * Runs both quick sort methods first and median pivot on the input array.
      *
-     * @param testName Test type description of array being passed
+     * @param testName Test type description of array being passed.
      * @param originalArray The input array to be sorted.
      * @param arraySorter The QuickSort object.
      */
