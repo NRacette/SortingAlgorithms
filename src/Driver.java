@@ -69,17 +69,23 @@ public class Driver {
         System.out.println("--------------------------- START OF SORTING ---------------------------");
         /**
          * Time complexity quickSortFirst  O(n^2) -- worst case
+         * Worst case because the pivot is always the smallest element
          * Time complexity quickSortMedian  O(n*log(n)) -- average case
+         * Average case because the pivot is the median of 3 random elements
          */
         runTest("An array with sorted values", sortedArrayOriginal, sorter);
         /**
          * Time complexity quickSortFirst  O(n*log(n)) -- average case
+         * Average case because the pivot is a random element
          * Time complexity quickSortMedian  O(n*log(n)) -- average case
+         * Average case because the pivot is the median of 3 random elements
          */
         runTest("An array with randomly ordered values", randomArrayOriginal, sorter);
         /**
          * Time complexity quickSortFirst  O(n^2) -- worst case
+         * Worst case because the pivot is always the largest element
          * Time complexity quickSortMedian  O(n*log(n)) -- average case
+         * Average case because the pivot is the median of 3 random elements
          */
         runTest("An array with values in reversed order", reversedArrayOriginal, sorter);
 
