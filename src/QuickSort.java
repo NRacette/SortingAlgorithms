@@ -9,9 +9,9 @@ import java.util.Random;
 public class QuickSort {
 
     /**
-     * Sorts the provided array  using QuickSort using first element as the pivot.
+     * Sorts the provided array using QuickSort using first element as the pivot.
      *
-     * @param inputArray the array to sort; if null or empty, the method returns immediately
+     * @param inputArray The input array to be sorted
      */
     public void quickSortFirst(int[] inputArray) {
         // check if array is null or empty
@@ -31,8 +31,8 @@ public class QuickSort {
      * The method then recursively calls itself on the left and right sub-arrays until the base case is reached
      *
      * @param inputArray the array being sorted
-     * @param lowIndex   the starting index of the subarray
-     * @param highIndex  the ending index of the subarray
+     * @param lowIndex starting index of the subarray
+     * @param highIndex ending index of the subarray
      */
     private void quicksortFirstPivot(int[] inputArray, int lowIndex, int highIndex) {
         // Initial check to see if lowIndex is less than highIndex
@@ -55,8 +55,8 @@ public class QuickSort {
      * Swaps the pivot value with the element at the partition index
      *
      * @param inputArray the array containing the subarray to partition
-     * @param lowIndex   the starting index of the subarray (pivot location)
-     * @param highIndex  the ending index of the subarray
+     * @param lowIndex the starting index of the subarray (pivot location)
+     * @param highIndex the ending index of the subarray
      * @return the final index of the pivot after partitioning
      */
     private int partitionArray(int[] inputArray, int lowIndex, int highIndex) {
@@ -84,7 +84,7 @@ public class QuickSort {
     /**
      * Sorts array using QuickSort with a pivot chosen as the median of three
      *
-     * @param inputArray the array that needs to be sorted
+     * @param inputArray The input array that needs to be sorted
      */
     public void quickSortMedian(int[] inputArray) {
         // check if array is null or empty
@@ -105,8 +105,8 @@ public class QuickSort {
      * The method then recursively calls itself on the left and right sub-arrays until the base case is reached
      * 
      * @param inputArray the array being sorted
-     * @param low  starting index of the subarray
-     * @param high  ending index of the subarray
+     * @param lowIndex starting index of the subarray
+     * @param highIndex ending index of the subarray
      */
     private void quicksortMedianPivot(int[] inputArray, int lowIndex, int highIndex) {
         if (lowIndex < highIndex) {
@@ -126,8 +126,8 @@ public class QuickSort {
      * Then using the same partition logic to break the array into two sub-arrays
      *
      * @param inputArray the array containing the subarray to partition
-     * @param low starting index of the subarray
-     * @param high ending index of the subarray
+     * @param lowIndex starting index of the subarray
+     * @param highIndex ending index of the subarray
      * @return index of the pivot after partitioning
      */
     private int partitionMedianPivot(int[] inputArray, int lowIndex, int highIndex) {
@@ -144,8 +144,8 @@ public class QuickSort {
      * Swaps that median value into position first position so it becomes the pivot.
      *
      * @param inputArray the array containing the values
-     * @param low        the starting index of the subarray
-     * @param high       the ending index of the subarray
+     * @param lowIndex starting index of the subarray
+     * @param highIndex ending index of the subarray
      */
     private void findAndPlaceMedianPivot(int[] inputArray, int lowIndex, int highIndex) {
         // Check if at least 3 elements in array
@@ -178,9 +178,9 @@ public class QuickSort {
     /**
      * Swaps two elements locations in an array.
      *
-     * @param inputArray the array containing the elements
-     * @param i index of the first element
-     * @param j index of the second element
+     * @param inputArray the array containing the elements to swap
+     * @param positionOne index of the first element
+     * @param positionTwo index of the second element
      */
     private void swap(int[] inputArray, int positionOne, int positionTwo) {
         int temp = inputArray[positionOne];
